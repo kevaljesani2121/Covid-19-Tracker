@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Covid 19 Tracker</string>
+    <string name="lbl_total_case">Total case</string>
+    <string name="lbl_recovered_cases">Recovered Cases</string>
+    <string name="lbl_deaths_cases">Deaths Cases</string>
+    <string name="lbl_active_cases">Active Cases</string>
+    <string name="lbl_global_stats">global stats</string>
+    <string name="lbl_cases">Cases</string>
+    <string name="lbl_0">0</string>
+    <string name="lbl_critical_cases">Critical Cases</string>
+    <string name="lbl_today_cases">Today Cases</string>
+    <string name="lbl_total_deaths">Total Deaths</string>
+    <string name="lbl_today_deaths">Today Deaths</string>
+    <string name="lbl_affected_countries">Affected Countries</string>
+    <string name="lbl_search_countries">Search Countries</string>
+    <string name="lbl_country">Country</string>
+    <string name="lbl_deaths">Deaths</string>
+    <string name="lbl_track_countries">Track countries</string>
+    <string name="todo">TODO</string>
+    <string name="lbl_let_s_get_started">Let\'s get started</string>
+</resources>
