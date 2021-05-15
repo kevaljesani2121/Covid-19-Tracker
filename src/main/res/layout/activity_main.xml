@@ -59,6 +59,7 @@
                             android:layout_marginBottom="@dimen/dp_15"
                             android:layout_weight="1"
                             android:gravity="center_vertical"
+                            android:layout_marginStart="@dimen/dp_15"
                             android:orientation="vertical">
 
                             <LinearLayout
@@ -73,13 +74,8 @@
                                     android:background="@color/md_yellow_900" />
 
                                 <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:paddingStart="@dimen/dp_10"
-                                    android:paddingLeft="@dimen/dp_10"
                                     android:text="@string/lbl_total_case"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/sp_15"
+                                    style="@style/tvLabelActivityMain"
                                     tools:ignore="RtlSymmetry" />
                             </LinearLayout>
 
@@ -95,13 +91,8 @@
                                     android:background="@color/md_green_600" />
 
                                 <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:paddingStart="@dimen/dp_10"
-                                    android:paddingLeft="@dimen/dp_10"
+                                    style="@style/tvLabelActivityMain"
                                     android:text="@string/lbl_recovered_cases"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/sp_15"
                                     tools:ignore="RtlSymmetry" />
                             </LinearLayout>
 
@@ -117,13 +108,8 @@
                                     android:background="@color/red" />
 
                                 <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:paddingStart="@dimen/dp_10"
-                                    android:paddingLeft="@dimen/dp_10"
+                                    style="@style/tvLabelActivityMain"
                                     android:text="@string/lbl_deaths_cases"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/sp_15"
                                     tools:ignore="RtlSymmetry" />
                             </LinearLayout>
 
@@ -139,13 +125,8 @@
                                     android:background="@color/md_blue_200" />
 
                                 <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:paddingStart="@dimen/dp_10"
-                                    android:paddingLeft="@dimen/dp_10"
+                                    style="@style/tvLabelActivityMain"
                                     android:text="@string/lbl_active_cases"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/sp_15"
                                     tools:ignore="RtlSymmetry" />
                             </LinearLayout>
                         </LinearLayout>
@@ -198,287 +179,134 @@
                                     android:textStyle="bold" />
 
                                 <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="@dimen/dp_1"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginTop="@dimen/dp_5"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:background="@color/gray" />
+                                    style="@style/viewCountryDetail"
+                                    android:layout_marginTop="@dimen/dp_5" />
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginTop="@dimen/dp_5"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:layout_marginBottom="@dimen/dp_5"
-                                    android:orientation="horizontal">
+                                <LinearLayout style="@style/llCasesRowActivityMain">
 
                                     <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
                                         android:text="@string/lbl_cases"
-                                        android:textSize="@dimen/sp_15"
+                                        style="@style/tvLabelStyleCountryDetail"
                                         tools:ignore="TooDeepLayout" />
 
                                     <TextView
                                         android:id="@+id/tvCasesCounts"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="right"
+                                        style="@style/tvValuesStyleCountryDetail"
                                         android:text="@string/lbl_0"
-                                        android:textColor="@color/md_deep_orange_A100"
-                                        android:textStyle="bold"
                                         tools:ignore="RtlHardcoded" />
                                 </LinearLayout>
 
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="@dimen/dp_1"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:background="@color/gray" />
+                                <View style="@style/viewCountryDetail" />
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginTop="@dimen/dp_5"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:layout_marginBottom="@dimen/dp_5"
-                                    android:orientation="horizontal">
+                                <LinearLayout style="@style/llCasesRowActivityMain">
 
                                     <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
                                         android:text="@string/lbl_recovered_cases"
-                                        android:textSize="@dimen/sp_15" />
+                                        style="@style/tvLabelStyleCountryDetail" />
 
                                     <TextView
                                         android:id="@+id/tvRecoveredCase"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="right"
+                                        style="@style/tvValuesStyleCountryDetail"
                                         android:text="@string/lbl_0"
-                                        android:textColor="@color/md_deep_orange_A100"
-                                        android:textStyle="bold"
                                         tools:ignore="RtlHardcoded" />
                                 </LinearLayout>
 
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="@dimen/dp_1"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:background="@color/gray" />
+                                <View style="@style/viewCountryDetail" />
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginTop="@dimen/dp_5"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:layout_marginBottom="@dimen/dp_5"
-                                    android:orientation="horizontal">
+                                <LinearLayout style="@style/llCasesRowActivityMain">
 
                                     <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
                                         android:text="@string/lbl_critical_cases"
-                                        android:textSize="@dimen/sp_15" />
+                                        style="@style/tvLabelStyleCountryDetail" />
 
                                     <TextView
                                         android:id="@+id/tvCriticalCase"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="right"
+                                        style="@style/tvValuesStyleCountryDetail"
                                         android:text="@string/lbl_0"
-                                        android:textColor="@color/md_deep_orange_A100"
-                                        android:textStyle="bold"
                                         tools:ignore="RtlHardcoded" />
                                 </LinearLayout>
 
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="@dimen/dp_1"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:background="@color/gray" />
+                                <View style="@style/viewCountryDetail" />
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginTop="@dimen/dp_5"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:layout_marginBottom="@dimen/dp_5"
-                                    android:orientation="horizontal">
+                                <LinearLayout style="@style/llCasesRowActivityMain">
 
                                     <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
                                         android:text="@string/lbl_active_cases"
-                                        android:textSize="@dimen/sp_15" />
+                                        style="@style/tvLabelStyleCountryDetail" />
 
                                     <TextView
                                         android:id="@+id/tvActiveCase"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="right"
+                                        style="@style/tvValuesStyleCountryDetail"
                                         android:text="@string/lbl_0"
-                                        android:textColor="@color/md_deep_orange_A100"
-                                        android:textStyle="bold"
                                         tools:ignore="RtlHardcoded" />
                                 </LinearLayout>
 
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="@dimen/dp_1"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:background="@color/gray" />
+                                <View style="@style/viewCountryDetail" />
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginTop="@dimen/dp_5"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:layout_marginBottom="@dimen/dp_5"
-                                    android:orientation="horizontal">
+                                <LinearLayout style="@style/llCasesRowActivityMain">
 
                                     <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
                                         android:text="@string/lbl_today_cases"
-                                        android:textSize="@dimen/sp_15" />
+                                        style="@style/tvLabelStyleCountryDetail" />
 
                                     <TextView
                                         android:id="@+id/tvTodayCases"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="right"
+                                        style="@style/tvValuesStyleCountryDetail"
                                         android:text="@string/lbl_0"
-                                        android:textColor="@color/md_deep_orange_A100"
-                                        android:textStyle="bold"
                                         tools:ignore="RtlHardcoded" />
                                 </LinearLayout>
 
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="@dimen/dp_1"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:background="@color/gray" />
+                                <View style="@style/viewCountryDetail" />
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginTop="@dimen/dp_5"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:layout_marginBottom="@dimen/dp_5"
-                                    android:orientation="horizontal">
+                                <LinearLayout style="@style/llCasesRowActivityMain">
 
                                     <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
                                         android:text="@string/lbl_total_deaths"
-                                        android:textSize="@dimen/sp_15" />
+                                        style="@style/tvLabelStyleCountryDetail" />
 
                                     <TextView
                                         android:id="@+id/tvTotalDeaths"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="right"
+                                        style="@style/tvValuesStyleCountryDetail"
                                         android:text="@string/lbl_0"
-                                        android:textColor="@color/md_deep_orange_A100"
-                                        android:textStyle="bold"
                                         tools:ignore="RtlHardcoded" />
                                 </LinearLayout>
 
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="@dimen/dp_1"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:background="@color/gray" />
+                                <View style="@style/viewCountryDetail" />
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginTop="@dimen/dp_5"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:layout_marginBottom="@dimen/dp_5"
-                                    android:orientation="horizontal">
+                                <LinearLayout style="@style/llCasesRowActivityMain">
 
                                     <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
                                         android:text="@string/lbl_today_deaths"
-                                        android:textSize="@dimen/sp_15" />
+                                        style="@style/tvLabelStyleCountryDetail" />
 
                                     <TextView
                                         android:id="@+id/tvTodayDeaths"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="right"
+                                        style="@style/tvValuesStyleCountryDetail"
                                         android:text="@string/lbl_0"
-                                        android:textColor="@color/md_deep_orange_A100"
-                                        android:textStyle="bold"
                                         tools:ignore="RtlHardcoded" />
                                 </LinearLayout>
 
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="@dimen/dp_1"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:background="@color/gray" />
+                                <View style="@style/viewCountryDetail" />
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginTop="@dimen/dp_5"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:layout_marginBottom="@dimen/dp_5"
-                                    android:orientation="horizontal">
+                                <LinearLayout style="@style/llCasesRowActivityMain">
 
                                     <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
                                         android:text="@string/lbl_affected_countries"
-                                        android:textSize="@dimen/sp_15" />
+                                        style="@style/tvLabelStyleCountryDetail" />
 
                                     <TextView
                                         android:id="@+id/tvAffectedCountries"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="right"
+                                        style="@style/tvValuesStyleCountryDetail"
                                         android:text="@string/lbl_0"
-                                        android:textColor="@color/md_deep_orange_A100"
-                                        android:textStyle="bold"
                                         tools:ignore="RtlHardcoded" />
                                 </LinearLayout>
 
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="@dimen/dp_1"
-                                    android:layout_marginLeft="@dimen/dp_20"
-                                    android:layout_marginRight="@dimen/dp_20"
-                                    android:background="@color/gray" />
-
+                                <View style="@style/viewCountryDetail" />
 
                             </LinearLayout>
                         </ScrollView>
-
                     </LinearLayout>
-
                 </androidx.cardview.widget.CardView>
-
-                <!--    </LinearLayout>-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -489,28 +317,16 @@
 
                     <Button
                         android:id="@+id/btnTrackCountries"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:layout_marginLeft="@dimen/dp_15"
-                        android:layout_marginTop="@dimen/dp_15"
-                        android:layout_marginRight="@dimen/dp_15"
+                        style="@style/btnSplashScreens"
                         android:layout_marginBottom="@dimen/dp_25"
                         android:background="@drawable/button_border"
                         android:onClick="true"
-                        android:padding="@dimen/dp_10"
+
                         android:text="@string/lbl_track_countries"
-                        android:textAllCaps="true"
-                        android:textColor="@color/md_deep_orange_300"
-                        android:textSize="@dimen/sp_20"
                         tools:ignore="OnClick" />
-
                 </LinearLayout>
-
             </LinearLayout>
 
         </ScrollView>
-
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
 </LinearLayout>

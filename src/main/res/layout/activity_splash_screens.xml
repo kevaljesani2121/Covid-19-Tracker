@@ -24,18 +24,8 @@
 
             <Button
                 android:id="@+id/btnStartActivity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginLeft="@dimen/dp_15"
-                android:layout_marginRight="@dimen/dp_15"
-                android:layout_marginBottom="@dimen/dp_25"
-                android:background="@drawable/button_border"
-                android:padding="@dimen/dp_10"
                 android:text="@string/lbl_let_s_get_started"
-                android:textColor="@color/md_deep_orange_300"
-                android:textSize="@dimen/sp_20"
-                android:textStyle="bold" />
+                style="@style/btnSplashScreens" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
