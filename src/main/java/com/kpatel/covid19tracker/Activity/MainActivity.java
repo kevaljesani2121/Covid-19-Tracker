@@ -17,8 +17,8 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.kpatel.covid19tracker.R;
+import com.kpatel.covid19tracker.SingletonPattern.VolleySingleton;
 import com.leo.simplearcloader.SimpleArcLoader;
 
 import org.eazegraph.lib.charts.PieChart;
@@ -45,8 +45,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         findAllIdFromMainActivity();
-
-
+//
     }
 
     public void findAllIdFromMainActivity() {
@@ -77,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
         swipeLayout = findViewById(R.id.swipeLayout);
 
@@ -134,7 +134,6 @@ public class MainActivity extends AppCompatActivity {
                     loader.setVisibility(View.GONE);
                     svStats.setVisibility(View.VISIBLE);
 
-
                 }
 
             }
@@ -148,14 +147,10 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        RequestQueue requestQueue = VolleySingleton.getInstance(this).getRequestQueue();
+//        RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(request);
     }
 
 
-    public void trackCountries(View view) {
-        Intent intent = new Intent(MainActivity.this, Track_countries.class);
-        startActivity(intent);
-
-    }
 }

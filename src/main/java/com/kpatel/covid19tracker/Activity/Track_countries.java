@@ -19,10 +19,10 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.kpatel.covid19tracker.Adapter.CountryAdapter;
 import com.kpatel.covid19tracker.Model.CountryModel;
 import com.kpatel.covid19tracker.R;
+import com.kpatel.covid19tracker.SingletonPattern.VolleySingleton;
 import com.leo.simplearcloader.SimpleArcLoader;
 
 import org.json.JSONArray;
@@ -127,7 +127,8 @@ public class Track_countries extends AppCompatActivity {
                 Toast.makeText(Track_countries.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
+//        RequestQueue requestQueue =  Volley.newRequestQueue(this);
+        RequestQueue requestQueue = VolleySingleton.getInstance(this).getRequestQueue();
         requestQueue.add(request);
 
     }
